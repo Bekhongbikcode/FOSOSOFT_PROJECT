@@ -8,7 +8,7 @@ export interface TopProductsProps extends BaseComponentProps {
     title: string;
 }
 
-export function TopProducts({ products, title, subtitle }: TopProductsProps) {
+export function TopProducts({ products, title }: TopProductsProps) {
     return (
         <div className="flex flex-col gap-4">
             <div className="flex items-center justify-between">

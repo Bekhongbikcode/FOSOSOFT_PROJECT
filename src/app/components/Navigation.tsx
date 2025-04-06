@@ -1,5 +1,6 @@
 import { MagnifyingGlassIcon, BellIcon, QuestionMarkCircleIcon, Cog6ToothIcon, ChatBubbleLeftIcon } from '@heroicons/react/24/outline';
 import { ChevronDownIcon } from '@heroicons/react/20/solid';
+import Image from 'next/image';
 
 const navigationItems = [
     { text: 'Danh mục', width: '93px' },
@@ -19,7 +20,7 @@ export function Navigation() {
             </div>
 
             <div className="flex flex-row items-center flex-1 h-7">
-                {navigationItems.map((item, index) => (
+                {navigationItems.map((item) => (
                     <div
                         key={item.text}
                         className="flex flex-row justify-center items-center px-2 h-7 rounded-xl"
@@ -68,7 +69,7 @@ export function Navigation() {
 
                 <div className="flex flex-row items-center gap-1 w-16 h-10">
                     <div className="flex flex-row items-center w-10 h-10 bg-white rounded-full">
-                        <img
+                        <Image
                             src="/globe.svg"
                             alt="User avatar"
                             className="w-10 h-10 rounded-[20.8px] object-cover"

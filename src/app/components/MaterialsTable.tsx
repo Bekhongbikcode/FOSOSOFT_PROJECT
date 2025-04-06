@@ -5,7 +5,7 @@ export interface MaterialsTableProps extends BaseComponentProps {
     materials: Material[];
 }
 
-export function MaterialsTable({ materials, title = "Nguyên Vật Liệu Cần Mua", className }: MaterialsTableProps) {
+export function MaterialsTable({ materials, title = "Nguyên Vật Liệu Cần Mua" }: MaterialsTableProps) {
     if (materials.length === 0) {
         return (
             <div className="bg-white rounded-2xl p-4 w-full max-w-[800px] shadow-lg border border-gray-100">
